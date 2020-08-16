@@ -17,7 +17,7 @@
  * under the License.
  */
 var app = {
-    macAddress: "90:F8:91:AC:72:E9",
+    macAddress: "98:D3:31:FD:27:38",
     macName: 'HC-05',
     // Application Constructor
     initialize: function () {
