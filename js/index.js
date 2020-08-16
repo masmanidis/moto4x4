@@ -53,10 +53,7 @@ var app = {
     openPort: function () {
         app.display("Subscribed to open port: " + app.params.macName + " " + app.params.macAddress);
         bluetoothSerial.subscribe('\n', function (data) {
-
-            if (!isNaN(parseInt(data))) {
-                $$("#stepDisplay").html(data);
-            }
+ 
         });
 
     },
@@ -151,9 +148,7 @@ var app = {
             function () {
                 bluetoothSerial.isConnected(
                     function () {
-                         
-
-                        bluetoothSerial.write(inType + "#\n");
+                        bluetoothSerial.write(inType + "\n");
                     },
                     function () {
                         app.display("Device not connected yet please wait");
